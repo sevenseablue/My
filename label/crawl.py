@@ -24,7 +24,7 @@ def crawlUrl(url):
 
 def crawl12306():
     ind = 1
-    dirInd = 5
+    dirInd = 6
     while True:
         dataDir = "E:/data/pic/12306/raw/%s" % dirInd
 
@@ -54,5 +54,5 @@ def main():
     crawl12306()
 
 
-if __name__ == "__init__":
+if __name__ == "__main__":
     main()

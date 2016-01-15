@@ -12,17 +12,11 @@ import numpy as np
 
 dir1 = "E:\PycharmProjects\My\label\data"
 pics = os.listdir(dir1)
-# print "exit"
 picInd = 2
 outDir = "E:\PycharmProjects\My\label\dataSplit"
 
 for picInd in range(len(pics)):
     img = cv2.imread("%s/%s" % (dir1, pics[picInd]))
-    # print img.shape
-    # cv2.namedWindow("Image")
-    # cv2.imshow("Image", img[1:30, 118:])
-    # cv2.imwrite("Image_head.png", img[1:30, 118:])
-    # cv2.waitKey(0)
     width = 73
     height = 80
     h1 = [30, 30 + height]
@@ -37,8 +31,6 @@ for picInd in range(len(pics)):
         print i
         cv2.imwrite("%s/%s_%s.png" % (outDir, pics[picInd], img_list[i]))
 
-
-# cv2.destroyAllWindows()
 
 sys.exit(0)
 
